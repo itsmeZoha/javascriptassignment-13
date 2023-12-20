@@ -1,19 +1,19 @@
-// let userName = prompt("Please Enter your name to visit our website? ") 
-// window.onload = function(){
-//    let message ="Good Day"
-// //    let firstName = prompt("Please Enter Your First Name?")
-// //    let lastName = prompt("Please Enter Your Last Name?")
-// //    let fullName = firstName +" "+ lastName
-//    let banger ="!"
-//    document.getElementById("userName").innerHTML = message + " " + userName+ banger
-// }
+let userName = prompt("Please Enter your name to visit our website? ") 
+window.onload = function(){
+   let message ="Good Day"
+//    let firstName = prompt("Please Enter Your First Name?")
+//    let lastName = prompt("Please Enter Your Last Name?")
+//    let fullName = firstName +" "+ lastName
+   let banger ="!"
+   document.getElementById("userName").innerHTML = message + " " + userName+ banger
+}
 var popupWindow;
 
 
-console.log(window.location.href) // protcol + host name mily ga //
-console.log(window.location.hostname)  // hostname = domain ko kahty ha //
-console.log(window.location.pathname)  //forwad salch lga kar jo bi lekh rahy ha wo path my a jye ga //
-console.log(window.location.hash)   // jo pathname ky bad hoga wo hash m a jye gi //
+console.log(window.location.href) 
+console.log(window.location.hostname)  
+console.log(window.location.pathname)  
+console.log(window.location.hash)   
 //---------------------Where We At---------------------//
 function whereWeAt(){
    document.getElementById('output').innerHTML = window.location.href
@@ -25,8 +25,8 @@ function goToGoogle(){
 }
 //---------------------Replace URL---------------------//
 function replaceURL(){
-      // window.location.replace("https://www.google.com") // replace sy hum apny website pr nahi ja sakty //
-}   
+      window.location.replace("https://www.google.com") 
+}
 //---------------------Open Popup---------------------//
 function openPopup(){
    popupWindow = window.open("",'myWindow',"width=420,height=380,left=200,top=100")
@@ -34,14 +34,14 @@ function openPopup(){
 }
 //---------------------Fill Content in Popup---------------------//
 function fillContentInPopup(){
-   popupWindow.document.write("<h1>Hello World</h1>") //yah 1 alg document m khuly ga//to is ky laiy pahly openpopup karna pary ga phir document m content write hoga//
+   popupWindow.document.write("<h1>Hello World</h1>") 
    // document.write("<h1>Hello World</h1>")
 }
 //---------------------Assign URL To Popup---------------------//
 function assignURLToPopup(){
    popupWindow.location.assign("https://techna.pk")
-   // popupWindow.location.assign("https://seeraht.com")
-   setTimeout(()=>{ //yah javascript ha buildin function ha is k pahly parameter m hum function call karty ha or 2sry parameter m hum time btaty ha ky yah kitni dair chaly ga// 
+   
+   setTimeout(()=>{ 
       popupWindow.close()
    }, 5000)
 }
